@@ -6,4 +6,5 @@
 
 /webpack.config.js
 
-/.json
+**/*.json
+**/*.png

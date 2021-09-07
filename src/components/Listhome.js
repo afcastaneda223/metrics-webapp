@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCocktail } from '../redux/home/home';
@@ -19,14 +20,18 @@ function Listhome() {
     }
   }, []);
 
+  const selecCocktail = (e) => {
+    console.log(e.target.id);
+  };
+
   return (
     <div>
       <div className="row row-cols-2 border-0 m-0 p-0 ">
         {myCocktailArray.map((cocktail) => (
-          <div className="col m-0 p-0 mainbg" key={cocktail.Ingredient}>
+          <div className="col m-0 p-0 mainbg" key={cocktail.Ingredient} onClick={selecCocktail}>
             <div className="card border-0 main-c2 rounded-0">
               <img src={cocktail.url} className="card-img opacity-75 rounded-0" alt="..." />
-              <div className="card-img-overlay h-100 d-flex flex-column justify-content-end">
+              <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
                 <h5 className="card-title text-end fw-bolder">{cocktail.Ingredient}</h5>
                 <p className="card-text fw-light text-end">
                   {/* { myCocktailArray.length} */}
