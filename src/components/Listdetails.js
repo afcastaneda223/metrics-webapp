@@ -31,11 +31,6 @@ function Listdetails() {
             <div className="col d-flex justify-content-end">
               <img src={detail.image} className="detailsimg" alt="..." />
             </div>
-            {/* <div className="col text-end align-self-center">
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-          </div>
-        </div> */}
           </div>
         </div>
       ))}

@@ -1,22 +1,9 @@
-// const BOOK_ROCKET = 'BOOK_ROCKET';
-// const UNBOOK_ROCKET = 'UNBOOK_ROCKET';
 const GET_INGREDIENT = 'GET_INGREDIENT';
 const GET_COCKTAIL = 'GET_COCKTAIL';
 const initialState = {
   array: [],
   ingredient: null,
 };
-// const API = '';
-
-// export const bookRocket = (payload) => ({
-//   type: BOOK_ROCKET,
-//   payload,
-// });
-
-// export const unbookRocket = (payload) => ({
-//   type: UNBOOK_ROCKET,
-//   payload,
-// });
 
 export const getIngredient = (payload) => ({
   type: GET_INGREDIENT,
@@ -28,9 +15,8 @@ export const getCocktail = (payload) => ({
   payload,
 });
 
-let counter = 0;
-
 const calcTotal = async (x) => {
+  let counter = 0;
   const arr = [];
   const fetchDetail = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${x}`);
   const details = await fetchDetail.json();
@@ -42,7 +28,7 @@ const calcTotal = async (x) => {
 const createArray = (x) => x.map((key) => ({
   Ingredient: key.strIngredient1,
   url: `https://www.thecocktaildb.com/images/ingredients/${key.strIngredient1}.png`,
-  total: calcTotal(key.strIngredient1).then((result) => result),
+  total: calcTotal(key.strIngredient1),
 }));
 
 const reducer = (state = initialState, action) => {

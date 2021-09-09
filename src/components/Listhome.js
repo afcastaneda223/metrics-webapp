@@ -21,7 +21,7 @@ function Listhome() {
   }, []);
 
   const selecCocktail = (e) => {
-    const x = e.target.id.split(' ').join('_').toLowerCase();
+    const x = e.target.id;
     dispatch(getIngredient(x));
   };
 
@@ -36,9 +36,9 @@ function Listhome() {
                 <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
                   <h5 className="card-title text-end fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
                   <p className="card-text fw-light text-end" id={cocktail.Ingredient}>
-                    {/* { cocktail.total}
-                  {' '} */}
-                    Options
+                    {/* { cocktail.total }
+                    {' '}
+                    Options */}
                   </p>
                 </div>
               </div>

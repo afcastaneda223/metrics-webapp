@@ -4,7 +4,7 @@ import Listhome from './Listhome';
 import image1 from './assets/cocktails.png';
 
 function Home() {
-  const myCocktailArray = useSelector((state) => state.cocktails);
+  const myCocktailArray = useSelector((state) => state.cocktails.array);
   return (
     <>
       <div className="card border-0">
@@ -16,7 +16,7 @@ function Home() {
             <div className="card-body">
               <h5 className="card-title fw-bolder">COCKTAILS</h5>
               <p className="card-text fw-light">
-                { myCocktailArray.length}
+                { myCocktailArray.length }
                 {' '}
                 ingredients total
               </p>
