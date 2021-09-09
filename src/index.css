@@ -12,6 +12,10 @@
   color: #fefbfe;
 }
 
+.white:hover{
+  color: #fefbfe;
+}
+
 .main-c1 {
   background-color: #5788e5;
 }
@@ -27,4 +31,8 @@
 .main-c2 {
   background: rgb(67, 105, 177);
   background: linear-gradient(180deg, rgba(67, 105, 177, 1) 0%, rgba(63, 98, 167, 1) 100%);
+}
+
+.detailsimg {
+  max-height: 150px;
 }

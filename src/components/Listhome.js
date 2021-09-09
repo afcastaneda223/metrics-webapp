@@ -1,13 +1,13 @@
-/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCocktail } from '../redux/home/home';
+import { NavLink } from 'react-router-dom';
+import { getCocktail, getIngredient } from '../redux/home/home';
 
 function Listhome() {
   const dispatch = useDispatch();
   const fetchApi = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
 
-  const myCocktailArray = useSelector((state) => state.cocktails);
+  const myCocktailArray = useSelector((state) => state.cocktails.array);
 
   useEffect(() => {
     const apiCocktail = async () => {
@@ -21,29 +21,32 @@ function Listhome() {
   }, []);
 
   const selecCocktail = (e) => {
-    console.log(e.target.id);
+    const x = e.target.id.split(' ').join('_').toLowerCase();
+    dispatch(getIngredient(x));
   };
 
   return (
-    <div>
-      <div className="row row-cols-2 border-0 m-0 p-0 ">
-        {myCocktailArray.map((cocktail) => (
-          <div className="col m-0 p-0 mainbg" key={cocktail.Ingredient} onClick={selecCocktail}>
-            <div className="card border-0 main-c2 rounded-0">
-              <img src={cocktail.url} className="card-img opacity-75 rounded-0" alt="..." />
-              <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
-                <h5 className="card-title text-end fw-bolder">{cocktail.Ingredient}</h5>
-                <p className="card-text fw-light text-end">
-                  {/* { myCocktailArray.length} */}
-                  {/* {' '} */}
-                  Options
-                </p>
+    <NavLink to="/details" className="m-0 p-0 white container" onClick={selecCocktail}>
+      <div>
+        <div className="row row-cols-2 border-0 m-0 p-0 ">
+          {myCocktailArray.map((cocktail) => (
+            <div className="col m-0 p-0" key={cocktail.Ingredient}>
+              <div className="card border-0 main-c2 rounded-0">
+                <img src={cocktail.url} className="card-img opacity-75 rounded-0" alt="..." />
+                <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
+                  <h5 className="card-title text-end fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
+                  <p className="card-text fw-light text-end" id={cocktail.Ingredient}>
+                    {/* { cocktail.total}
+                  {' '} */}
+                    Options
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </NavLink>
   );
 }
 

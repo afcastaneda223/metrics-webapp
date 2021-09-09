@@ -8,7 +8,7 @@ function Navbar() {
         <NavLink to="/">
           <i className="fas fa-chevron-left white" />
         </NavLink>
-        <NavLink to="/details" activeClassName="fw-bold text-decoration-underline" className="link-dark text-decoration-none" exact>Details</NavLink>
+        <NavLink to="/details" activeClassName="fw-bold text-decoration-underline" className="text-decoration-none white" exact>Details</NavLink>
         <ul className="navbar-nav text-end">
           <li className="m-2 white" key="home">
             <i className="fas fa-microphone" />
