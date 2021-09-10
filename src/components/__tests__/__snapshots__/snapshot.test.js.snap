@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render Cocktail page Renders the Cocktail page 1`] = `<div />`;
+
 exports[`Render Details page Renders the Details page 1`] = `
 Array [
   <div>
@@ -38,9 +40,15 @@ Array [
     COCKTAILS WITH
      
   </h6>,
-  <div
-    className="m-0 p-0"
-  />,
+  <a
+    className="m-0 p-0 white container"
+    href="/cocktail"
+    onClick={[Function]}
+  >
+    <div
+      className="m-0 p-0"
+    />
+  </a>,
 ]
 `;
 
@@ -103,9 +111,15 @@ Array [
 `;
 
 exports[`Render Listdetails page Renders the Listdetails page 1`] = `
-<div
-  className="m-0 p-0"
-/>
+<a
+  className="m-0 p-0 white container"
+  href="/cocktail"
+  onClick={[Function]}
+>
+  <div
+    className="m-0 p-0"
+  />
+</a>
 `;
 
 exports[`Render Listhome page Renders the Listhome page 1`] = `

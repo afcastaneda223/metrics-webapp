@@ -2,7 +2,7 @@
 
 > The Metrics WebAPP is a MVP mobile web application to check a list of Cocktails filtered by ingredients that was created making use of React and Redux
 
-![screenshot]()
+![screenshot](ScreenShot.png)
 
 
 ## Live-version
@@ -10,7 +10,6 @@
 [Live Version]()
 
 ## Video Presentation
-
 
 [Presentation]()
 

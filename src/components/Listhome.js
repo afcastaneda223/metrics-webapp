@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getCocktail, getIngredient } from '../redux/home/home';
+import { getIngredients, pickIngredient } from '../redux/home/home';
 
 function Listhome() {
   const dispatch = useDispatch();
   const fetchApi = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
 
-  const myCocktailArray = useSelector((state) => state.cocktails.array);
+  const myCocktailArray = useSelector((state) => state.home.array);
 
   useEffect(() => {
     const apiCocktail = async () => {
       const fetchCocktail = await fetch(fetchApi);
       const cocktails = await fetchCocktail.json();
-      return dispatch(getCocktail(cocktails));
+      return dispatch(getIngredients(cocktails));
     };
     if (myCocktailArray.length === 0) {
       apiCocktail();
@@ -22,7 +22,7 @@ function Listhome() {
 
   const selectCocktail = (e) => {
     const x = e.target.id;
-    dispatch(getIngredient(x));
+    dispatch(pickIngredient(x));
   };
 
   return (
@@ -36,7 +36,7 @@ function Listhome() {
                 <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
                   <h5 className="card-title text-center fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
                   <p className="card-text fw-light text-end" id={cocktail.Ingredient} key={cocktail.Ingredient}>
-                    {/* { cocktail.total }
+                    {/* { cocktail.total.text() }
                     {' '}
                     Options */}
                   </p>

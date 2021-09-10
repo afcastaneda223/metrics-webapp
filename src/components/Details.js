@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Listdetails from './Listdetails';
 
 function Details() {
-  const myCocktailArray = useSelector((state) => state.cocktails.ingredient);
+  const myCocktailArray = useSelector((state) => state.home.ingredient);
 
   return (
     <>

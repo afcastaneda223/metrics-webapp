@@ -8,6 +8,7 @@ import bootstrap from 'bootstrap';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Details from './components/Details';
+import Cocktail from './components/Cocktail';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/Details">
               <Details />
+            </Route>
+            <Route path="/Cocktail">
+              <Cocktail />
             </Route>
           </Switch>
         </div>

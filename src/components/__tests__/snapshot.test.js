@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Details from '../Details';
 import Home from '../Home';
+import Cocktail from '../Cocktail';
 import Listhome from '../Listhome';
 import Listdetails from '../Listdetails';
 import Navbar from '../Navbar';
@@ -54,7 +55,9 @@ describe('Render Details page', () => {
   it('Renders the Details page', () => {
     const details = TestRenderer.create(
       <Provider store={store}>
+        <BrowserRouter>
         <Details />
+        </BrowserRouter>
       </Provider>,
     ).toJSON();
     expect(details).toMatchSnapshot();
@@ -65,9 +68,22 @@ describe('Render Listdetails page', () => {
   it('Renders the Listdetails page', () => {
     const listdetails = TestRenderer.create(
       <Provider store={store}>
+        <BrowserRouter>
         <Listdetails />
+        </BrowserRouter>
       </Provider>,
     ).toJSON();
     expect(listdetails).toMatchSnapshot();
+  });
+});
+
+describe('Render Cocktail page', () => {
+  it('Renders the Cocktail page', () => {
+    const cocktail = TestRenderer.create(
+      <Provider store={store}>
+        <Cocktail />
+      </Provider>,
+    ).toJSON();
+    expect(cocktail).toMatchSnapshot();
   });
 });
