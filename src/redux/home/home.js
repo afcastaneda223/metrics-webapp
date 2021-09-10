@@ -25,29 +25,6 @@ const calcTotal = async (x) => {
   return counter;
 };
 
-// const calcTotal = (x) => {
-//   fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${x}`, {
-//     method: 'GET',
-//   }).then((response) => response.json()).then((data) => {
-//     const total = data.drinks.lenght;
-//     console.log(data.drinks.length);
-//     return total;
-//   });
-// };
-
-// const createArray = (x) => {
-//   const innerArray = [];
-//   x.forEach(async (key) => {
-//     const total1 = await calcTotal(key.strIngredient1);
-//     innerArray.push({
-//       Ingredient: key.strIngredient1,
-//       url: `https://www.thecocktaildb.com/images/ingredients/${key.strIngredient1}.png`,
-//       total: total1,
-//     });
-//   });
-//   return innerArray;
-// };
-
 const createArray = (x) => x.map((key) => ({
   Ingredient: key.strIngredient1,
   url: `https://www.thecocktaildb.com/images/ingredients/${key.strIngredient1}.png`,

@@ -35,11 +35,6 @@ function Listhome() {
                 <img src={cocktail.url} className="card-img opacity-75 rounded-0" alt="..." />
                 <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
                   <h5 className="card-title text-center fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
-                  <p className="card-text fw-light text-end" id={cocktail.Ingredient} key={cocktail.Ingredient}>
-                    {/* { cocktail.total.text() }
-                    {' '}
-                    Options */}
-                  </p>
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ function Cocktail() {
   return (
     <div>
       { myDetailsID.map((details) => (
-        <div className="card bg2" key="{details.strDrink}">
+        <div className="card bg2" key={details.strDrink}>
           <img src={details.image} className="card-img-top" alt="..." />
           <div className="card-body bg2">
             <h5 className="card-title fw-bold">{details.name}</h5>

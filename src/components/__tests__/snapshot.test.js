@@ -56,7 +56,7 @@ describe('Render Details page', () => {
     const details = TestRenderer.create(
       <Provider store={store}>
         <BrowserRouter>
-        <Details />
+          <Details />
         </BrowserRouter>
       </Provider>,
     ).toJSON();
@@ -69,7 +69,7 @@ describe('Render Listdetails page', () => {
     const listdetails = TestRenderer.create(
       <Provider store={store}>
         <BrowserRouter>
-        <Listdetails />
+          <Listdetails />
         </BrowserRouter>
       </Provider>,
     ).toJSON();
