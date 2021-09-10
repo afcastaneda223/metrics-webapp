@@ -15,20 +15,9 @@ export const pickIngredient = (payload) => ({
   payload,
 });
 
-const calcTotal = async (x) => {
-  let counter = 0;
-  const arr = [];
-  const fetchDetail = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${x}`);
-  const details = await fetchDetail.json();
-  arr.push(details.drinks);
-  counter = arr[0].length;
-  return counter;
-};
-
 const createArray = (x) => x.map((key) => ({
   Ingredient: key.strIngredient1,
   url: `https://www.thecocktaildb.com/images/ingredients/${key.strIngredient1}.png`,
-  total: calcTotal(key.strIngredient1),
 }));
 
 const reducer = (state = initialState, action) => {

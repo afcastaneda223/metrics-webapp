@@ -7,7 +7,7 @@
 
 ## Live-version
 
-[Live Version]()
+[Live Version](https://cocktailsapiapp.netlify.app/)
 
 ## Video Presentation
 
