@@ -10,7 +10,7 @@ function Home() {
       <div className="card border-0">
         <div className="row g-0 main-c1">
           <div className="col">
-            <img src={image1} className="img-fluid rounded-0 opacity-75" alt="..." />
+            <img src={image1} className="img-fluid rounded-0" alt="..." />
           </div>
           <div className="col align-self-center">
             <div className="card-body">

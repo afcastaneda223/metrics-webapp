@@ -1,6 +1,6 @@
 # Metrics WebAPP
 
-> The Metrics WebAPP is a MVP mobile web application to check a list of metrics (numeric values) that was created making use of React and Redux
+> The Metrics WebAPP is a MVP mobile web application to check a list of Cocktails filtered by ingredients that was created making use of React and Redux
 
 ![screenshot]()
 

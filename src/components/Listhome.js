@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getCocktail, getIngredient } from '../redux/home/home';
 
 function Listhome() {
@@ -20,22 +20,22 @@ function Listhome() {
     }
   }, []);
 
-  const selecCocktail = (e) => {
+  const selectCocktail = (e) => {
     const x = e.target.id;
     dispatch(getIngredient(x));
   };
 
   return (
-    <NavLink to="/details" className="m-0 p-0 white container" onClick={selecCocktail}>
+    <Link to="/details" className="m-0 p-0 white container" onClick={selectCocktail}>
       <div>
         <div className="row row-cols-2 border-0 m-0 p-0 ">
-          {myCocktailArray.map((cocktail) => (
+          { myCocktailArray.map((cocktail) => (
             <div className="col m-0 p-0" key={cocktail.Ingredient}>
               <div className="card border-0 main-c2 rounded-0">
                 <img src={cocktail.url} className="card-img opacity-75 rounded-0" alt="..." />
                 <div className="card-img-overlay h-100 d-flex flex-column justify-content-end" id={cocktail.Ingredient}>
-                  <h5 className="card-title text-end fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
-                  <p className="card-text fw-light text-end" id={cocktail.Ingredient}>
+                  <h5 className="card-title text-center fw-bolder" id={cocktail.Ingredient}>{cocktail.Ingredient}</h5>
+                  <p className="card-text fw-light text-end" id={cocktail.Ingredient} key={cocktail.Ingredient}>
                     {/* { cocktail.total }
                     {' '}
                     Options */}
@@ -46,7 +46,7 @@ function Listhome() {
           ))}
         </div>
       </div>
-    </NavLink>
+    </Link>
   );
 }
 

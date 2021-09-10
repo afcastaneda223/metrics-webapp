@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Details page Renders the Details page 1`] = `
+Array [
+  <div>
+    <div
+      className="card border-0"
+    >
+      <div
+        className="row g-0 main-c1"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt="..."
+            className="img-fluid rounded-0 opacity-75"
+            src="https://www.thecocktaildb.com/images/ingredients/null.png"
+          />
+        </div>
+        <div
+          className="col align-self-center"
+        >
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title fw-bolder text-uppercase"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <h6
+    className="text-uppercase"
+  >
+    COCKTAILS WITH
+     
+  </h6>,
+  <div
+    className="m-0 p-0"
+  />,
+]
+`;
+
+exports[`Render Home page Renders the Home page 1`] = `
+Array [
+  <div
+    className="card border-0"
+  >
+    <div
+      className="row g-0 main-c1"
+    >
+      <div
+        className="col"
+      >
+        <img
+          alt="..."
+          className="img-fluid rounded-0"
+          src="cocktails.png"
+        />
+      </div>
+      <div
+        className="col align-self-center"
+      >
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title fw-bolder"
+          >
+            COCKTAILS
+          </h5>
+          <p
+            className="card-text fw-light"
+          >
+            0
+             
+            ingredients total
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <h6>
+      COCKTAILS BY INGREDIENT
+    </h6>
+    <a
+      className="m-0 p-0 white container"
+      href="/details"
+      onClick={[Function]}
+    >
+      <div>
+        <div
+          className="row row-cols-2 border-0 m-0 p-0 "
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Render Listdetails page Renders the Listdetails page 1`] = `
+<div
+  className="m-0 p-0"
+/>
+`;
+
+exports[`Render Listhome page Renders the Listhome page 1`] = `
+<a
+  className="m-0 p-0 white container"
+  href="/details"
+  onClick={[Function]}
+>
+  <div>
+    <div
+      className="row row-cols-2 border-0 m-0 p-0 "
+    />
+  </div>
+</a>
+`;
+
+exports[`Render Navbar Renders the navbar 1`] = `
+<nav
+  className="navbar navbar-expand"
+>
+  <div
+    className="container-fluid main-navbar"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <i
+        className="fas fa-chevron-left white"
+      />
+    </a>
+    <ul
+      className="navbar-nav text-end"
+    >
+      <li
+        className="m-2 white"
+      >
+        <i
+          className="fas fa-microphone"
+        />
+      </li>
+      <li
+        className="m-2 white"
+      >
+        <i
+          className="fas fa-cog"
+        />
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
