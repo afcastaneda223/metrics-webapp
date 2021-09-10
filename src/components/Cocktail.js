@@ -21,14 +21,14 @@ function Cocktail() {
   return (
     <div>
       { myDetailsID.map((details) => (
-        <div className="card bg2" key={details.strDrink}>
-          <img src={details.image} className="card-img-top" alt="..." />
+        <div className="card bg2 border-0" key={details.strDrink}>
+          <img src={details.image} className="p-5 bg1 border-0" alt="..." />
           <div className="card-body bg2">
             <h5 className="card-title fw-bold">{details.name}</h5>
             <p>{details.instructions}</p>
             {details.ingredients.map((ingredient) => (
               <div className="list-group" key={details.id}>
-                { ingredient != null ? <li className="list-group-item list-group-item-action rounded">{ingredient}</li> : null }
+                { ingredient != null ? <li className="list-group-item list-group-item-action rounded-0">{ingredient}</li> : null }
               </div>
             ))}
           </div>

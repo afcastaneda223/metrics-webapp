@@ -16,7 +16,7 @@ Array [
         >
           <img
             alt="..."
-            className="img-fluid rounded-0 opacity-75"
+            className="img-fluid rounded-0 opacity-75 detailsimg"
             src="https://www.thecocktaildb.com/images/ingredients/null.png"
           />
         </div>
@@ -35,7 +35,7 @@ Array [
     </div>
   </div>,
   <h6
-    className="text-uppercase"
+    className="text-uppercase m-0 p-0"
   >
     COCKTAILS WITH
      
@@ -65,7 +65,7 @@ Array [
       >
         <img
           alt="..."
-          className="img-fluid rounded-0"
+          className="img-fluid rounded-0 detailsimg"
           src="cocktails.png"
         />
       </div>
@@ -92,7 +92,9 @@ Array [
     </div>
   </div>,
   <div>
-    <h6>
+    <h6
+      className="m-0 p-0"
+    >
       COCKTAILS BY INGREDIENT
     </h6>
     <a

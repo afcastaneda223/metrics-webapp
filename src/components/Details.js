@@ -12,7 +12,7 @@ function Details() {
         <div className="card border-0">
           <div className="row g-0 main-c1">
             <div className="col">
-              <img src={`https://www.thecocktaildb.com/images/ingredients/${myCocktailArray}.png`} className="img-fluid rounded-0 opacity-75" alt="..." />
+              <img src={`https://www.thecocktaildb.com/images/ingredients/${myCocktailArray}.png`} className="img-fluid rounded-0 opacity-75 detailsimg" alt="..." />
             </div>
             <div className="col align-self-center">
               <div className="card-body">
@@ -22,7 +22,7 @@ function Details() {
           </div>
         </div>
       </div>
-      <h6 className="text-uppercase">
+      <h6 className="text-uppercase m-0 p-0">
         COCKTAILS WITH
         {' '}
         {myCocktailArray}

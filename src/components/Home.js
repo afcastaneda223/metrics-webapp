@@ -10,7 +10,7 @@ function Home() {
       <div className="card border-0">
         <div className="row g-0 main-c1">
           <div className="col">
-            <img src={image1} className="img-fluid rounded-0" alt="..." />
+            <img src={image1} className="img-fluid rounded-0 detailsimg" alt="..." />
           </div>
           <div className="col align-self-center">
             <div className="card-body">
@@ -25,7 +25,7 @@ function Home() {
         </div>
       </div>
       <div>
-        <h6>COCKTAILS BY INGREDIENT</h6>
+        <h6 className="m-0 p-0">COCKTAILS BY INGREDIENT</h6>
         <Listhome />
       </div>
     </>
