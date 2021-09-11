@@ -1,6 +1,7 @@
 # Ignore dist folder
 
 /dist
+/__test__
 
 # Ignore webpack.config.js file
 
