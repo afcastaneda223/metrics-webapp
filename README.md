@@ -1,18 +1,17 @@
 # Metrics WebAPP
 
-> The Metrics WebAPP is a MVP mobile web application to check a list of metrics (numeric values) that was created making use of React and Redux
+> The Metrics WebAPP is a MVP mobile web application to check a list of Cocktails filtered by ingredients that was created making use of React and Redux
 
-![screenshot]()
+![screenshot](/ScreenShot.png)
 
 
 ## Live-version
 
-[Live Version]()
+[Live Version](https://cocktailsapiapp.netlify.app/)
 
 ## Video Presentation
 
-
-[Presentation]()
+[Presentation](https://www.loom.com/share/945b95a2d3f4477ab27ff97c4eb5d676)
 
 ## Built With
 
@@ -47,7 +46,7 @@
 👤 **Andres Felipe Castañeda Ramos**
 - Github: [@afcastaneda223](https://github.com/afcastaneda223)
 - Twitter: [@afcastaneda](https://twitter.com/afcastaneda)
-- Linkedin: [Andres Felipe Castañeda](www.linkedin.com/in/andres-castaneda223)
+- Linkedin: [Andres Felipe Castañeda](https://www.linkedin.com/in/andcast)
 
 
 ## 🤝 Contributing
@@ -60,6 +59,8 @@ Feel free to check the [issues page](https://github.com/afcastaneda223/).
 ## 👋 Acknowledgements
 
 My family
+
+[Design by Nelson Sakwa.](https://www.behance.net/sakwadesignstudio) 
 
 ## Show your support
 
