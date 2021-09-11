@@ -9,6 +9,7 @@ function Listhome() {
   const fetchApi = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
 
   const myCocktailArray = useSelector((state) => state.home.array);
+  console.log('logtest', myCocktailArray);
   const myInput = useSelector((state) => state.home.input);
 
   useEffect(() => {
