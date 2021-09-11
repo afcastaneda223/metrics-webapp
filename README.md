@@ -46,7 +46,7 @@
 👤 **Andres Felipe Castañeda Ramos**
 - Github: [@afcastaneda223](https://github.com/afcastaneda223)
 - Twitter: [@afcastaneda](https://twitter.com/afcastaneda)
-- Linkedin: [Andres Felipe Castañeda](www.linkedin.com/in/andres-castaneda223)
+- Linkedin: [Andres Felipe Castañeda](https://www.linkedin.com/in/andcast)
 
 
 ## 🤝 Contributing
@@ -59,6 +59,8 @@ Feel free to check the [issues page](https://github.com/afcastaneda223/).
 ## 👋 Acknowledgements
 
 My family
+
+[Design by Nelson Sakwa.](https://www.behance.net/sakwadesignstudio) 
 
 ## Show your support
 
