@@ -12,7 +12,15 @@ const reducer = (state = initialState, action) => {
       return action.payload.drinks.map((key) => ({
         name: key.strDrink,
         image: key.strDrinkThumb,
-        instructions: key.strInstructions,
+
+        instructions: [
+          key.strInstructions,
+          key.strInstructionsES,
+          key.strInstructionsDE,
+          key.strInstructionsFR,
+          key.strInstructionsIT,
+        ],
+
         ingredients: [
           key.strIngredient1,
           key.strIngredient2,

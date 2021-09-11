@@ -12,18 +12,24 @@ afterEach(cleanup);
 
 const firstState = fakeobject2;
 
+const createDetailArray = (x) => x.map((key) => ({
+  name: key.strDrink,
+  image: key.strDrinkThumb,
+  id: key.idDrink,
+}));
+
 const reducer = (state = firstState, action) => {
-    switch (action.type) {
-      case 'GET_DETAIL':
-        return { ...state, array: createDetailArray(action.payload.drinks) };
-  
-      case 'GET_DETAILID':
-        return { ...state, detailID: action.payload };
-  
-      default:
-        return state;
-    }
-  };
+  switch (action.type) {
+    case 'GET_DETAIL':
+      return { ...state, array: createDetailArray(action.payload.drinks) };
+
+    case 'GET_DETAILID':
+      return { ...state, detailID: action.payload };
+
+    default:
+      return state;
+  }
+};
 
 function renderWithRedux(
   component,
@@ -37,7 +43,6 @@ function renderWithRedux(
 it('Renders with Redux', () => {
   const { getByText } = renderWithRedux(<Listdetails />);
 });
-
 
 it('Renders data from state', () => {
   const { getByText } = renderWithRedux(<Listdetails />);

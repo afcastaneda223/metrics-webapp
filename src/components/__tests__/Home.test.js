@@ -12,21 +12,26 @@ afterEach(cleanup);
 
 const firstState = fakeobject;
 
+const createArray = (x) => x.map((key) => ({
+  Ingredient: key.strIngredient1,
+  url: `https://www.thecocktaildb.com/images/ingredients/${key.strIngredient1}.png`,
+}));
+
 const reducer = (state = firstState, action) => {
-    switch (action.type) {
-      case 'PICK_INGREDIENT':
-        return { ...state, ingredient: action.payload };
-  
-      case 'GET_INGREDIENTS':
-        return { ...state, array: createArray(action.payload.drinks) };
-      
-      case 'RELOAD_TOTAL':
-        return state;
-  
-      default:
-        return state;
-    }
-  };
+  switch (action.type) {
+    case 'PICK_INGREDIENT':
+      return { ...state, ingredient: action.payload };
+
+    case 'GET_INGREDIENTS':
+      return { ...state, array: createArray(action.payload.drinks) };
+
+    case 'RELOAD_TOTAL':
+      return state;
+
+    default:
+      return state;
+  }
+};
 
 function renderWithRedux(
   component,
