@@ -25,7 +25,6 @@ function Home() {
         </div>
       </div>
       <div>
-        <h6 className="m-0 p-0">COCKTAILS BY INGREDIENT</h6>
         <Listhome />
       </div>
     </>

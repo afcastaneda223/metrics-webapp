@@ -92,11 +92,36 @@ Array [
     </div>
   </div>,
   <div>
-    <h6
-      className="m-0 p-0"
-    >
-      COCKTAILS BY INGREDIENT
-    </h6>
+    <div>
+      <div
+        className="container m-0 p-0"
+      >
+        <div
+          className="row align-items-center"
+        >
+          <div
+            className="col"
+          >
+            <h6
+              className=""
+            >
+              COCKTAILS BY INGREDIENT
+            </h6>
+          </div>
+          <div
+            className="col"
+          >
+            <input
+              className="form-control"
+              id="input"
+              onChange={[Function]}
+              placeholder="Filter by Ingredient"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <a
       className="m-0 p-0 white container"
       href="/details"
@@ -125,17 +150,49 @@ exports[`Render Listdetails page Renders the Listdetails page 1`] = `
 `;
 
 exports[`Render Listhome page Renders the Listhome page 1`] = `
-<a
-  className="m-0 p-0 white container"
-  href="/details"
-  onClick={[Function]}
->
+Array [
   <div>
     <div
-      className="row row-cols-2 border-0 m-0 p-0 "
-    />
-  </div>
-</a>
+      className="container m-0 p-0"
+    >
+      <div
+        className="row align-items-center"
+      >
+        <div
+          className="col"
+        >
+          <h6
+            className=""
+          >
+            COCKTAILS BY INGREDIENT
+          </h6>
+        </div>
+        <div
+          className="col"
+        >
+          <input
+            className="form-control"
+            id="input"
+            onChange={[Function]}
+            placeholder="Filter by Ingredient"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <a
+    className="m-0 p-0 white container"
+    href="/details"
+    onClick={[Function]}
+  >
+    <div>
+      <div
+        className="row row-cols-2 border-0 m-0 p-0 "
+      />
+    </div>
+  </a>,
+]
 `;
 
 exports[`Render Navbar Renders the navbar 1`] = `
